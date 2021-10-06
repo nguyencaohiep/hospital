@@ -1,0 +1,107 @@
+@import "./setup.css";
+body {
+    width: 100%;
+    padding-top: 10px;
+    height: 1000px;
+}
+
+header {
+    padding: 0px 50px;
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    padding: 5px;
+}
+
+.top .contact {
+    display: flex;
+}
+
+.top .contact i {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.sign {
+    border: 2px solid var(--teal);
+    height: 100%;
+    width: 150px;
+    display: flex;
+    border-radius: 25px;
+    background-color: var(--teal);
+}
+
+.sign a {
+    display: inline-block;
+    margin: auto;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    background-color: var(--teal);
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.right>div {
+    margin: 10px 0px;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+.logo i {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    color: var(--white);
+    font-size: 45px;
+}
+
+.sologan {
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    height: 50px;
+    background-color: var(--white);
+    bottom: -25px;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    border-radius: 5px;
+}
+
+.image {
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/hsp.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
