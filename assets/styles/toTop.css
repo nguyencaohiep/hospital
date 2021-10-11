@@ -1,0 +1,15 @@
+@import './setup.css';
+.to-top {
+    position: fixed;
+    display: flex;
+    background-color: var(--teal);
+    bottom: 16px;
+    right: 16px;
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

@@ -6,8 +6,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
-    text-decoration: none;
     color: var(--gray);
     font-size: 18px;
     font-weight: 600;
@@ -15,7 +18,25 @@ a {
 
 p {
     font-weight: 400;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: var(--white);
+}
+
+.wrapper {
+    padding: 0 50px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.form-control {
+    padding: 10px 18px 10px 18px;
+    border: 1px solid #E3E3E3;
+    border-radius: 30px;
+    color: #2c2c2c;
+    line-height: normal;
 }
 
 :root {

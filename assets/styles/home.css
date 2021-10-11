@@ -1,0 +1,31 @@
+@import './setup.css';
+.wrapper {
+    height: 1000px;
+}
+
+#to-top {
+    position: fixed;
+    display: flex;
+    background-color: var(--teal);
+    bottom: 16px;
+    right: 16px;
+    height: 50px;
+    width: 50px;
+    color: black;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#to-top:hover {
+    color: black;
+}

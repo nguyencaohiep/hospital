@@ -1,69 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
-    <link rel="stylesheet" href="../assets/styles/setup.css">
     <link rel="stylesheet" href="../assets/styles/header.css">
-
 </head>
 
 <body>
-    <header>
-        <div class="top">
-            <div class="contact">
-                <i class="fas fa-envelope"></i>
-                <p style="font-size: 18px; ">ptitcare@gmail.com</p>
+    <div class="main_header">
+        <section id="top-nav">
+            <div class="row">
+                <div class="col col-md-6 col-lg-9" style="align-items: center;">
+                    <div class="left d-flex">
+                        <p style="color:black">
+                            <i class="fas fa-envelope"></i>ptitcare@gmail.com</p>
+                        <p style="color:black">
+                            <i class="fas fa-phone-alt"></i>+8412345678</p>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-3">
+                    <div class="text-right">
+                        <a href=" " class="btn btn-success">Đăng nhập</a>
+                    </div>
+                </div>
             </div>
-            <div class="sign">
-                <a href="">Đăng nhập</a>
+        </section>
+        <header id="header" class="bg-success">
+            <div class="container">
+                <div class="head">
+                    <div class="row">
+                        <div class="col-sm-5 col-lg-5">
+                            <div class="left">
+                                <!-- <i class="fas fa-hospital" style="font-size: 20px;"></i> -->
+                                <a href="./home.html" class="navbar-brand" style="text-transform: uppercase;color:var(--white); letter-spacing: 5px;">
+                                            ptitcare
+                                        </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-lg-7">
+                            <div class="text-right">
+                                <p class="col-white m-b-0 p-t-5 text-">
+                                    <i class="far fa-clock"></i> T2 - T6 : 8:00 - 17:00
+                                </p>
+                                <p class="col-white m-b-0 p-t-5">
+                                    <i class="fas fa-map-marked-alt"></i> Km10 Nguyễn Trãi - Hà Đông
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="navbar">
+            <div class="container">
+                <nav class="navbar bg-light navbar-light navbar-expand-lg">
+                    <div class="navbar-collapse collapse" id="navbarMenu">
+                        <ul class="navbar-nav mr-auto d-flex">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Dịch vụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Phòng ban</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Đội ngũ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <form action="" class="d-flex">
+                            <input type="text" class="form-control me-2" placeholder="Search">
+                            <button class="btn btn-success">Search</button>
+                        </form>
+                    </div>
+                </nav>
             </div>
         </div>
-        <div class="wrapper">
-            <div class="left">
-                <div class="logo">
-                    <i class="fas fa-hospital-alt"></i>
-                </div>
-                <div class="sologan">
-                    <p style="letter-spacing: 10px;">Ptitcare</p>
-                    <p style="letter-spacing: 3px;">Luôn bên bạn</p>
-                </div>
-            </div>
-            <div class="right">
-                <div>
-                    <i class="far fa-clock" style="color:var(--white)"></i>
-                    <p style="color:var(--white);display:inline-block; margin-left: 10px">T2 - T6: 8:00 - 17:00</p>
-                </div>
-                <div>
-                    <i class="fas fa-map-marker-alt" style=" color:var(--white)"></i>
-                    <p style="color:var(--white);display:inline-block;margin-left: 10px ">Nguyễn Khuyến - Hà Đông</p>
-                </div>
-            </div>
-            <nav>
-                <div id="service ">
-                    <a href=" ">Dịch vụ</a>
-                </div>
-                <div id="department ">
-                    <a href=" ">Phòng ban</a>
-                </div>
-                <div id="doctors ">
-                    <a href=" ">Đội ngũ</a>
-                </div>
-                <div id="contact ">
-                    <a href=" ">Liên hệ</a>
-                </div>
-            </nav>
-        </div>
-        <div class="image">
-            <p>Chào mừng bạn đến với</p>
-            <p>PTIT CARE</p>
-        </div>
-    </header>
-
-
+    </div>
 </body>
 
 </html>

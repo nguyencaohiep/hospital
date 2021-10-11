@@ -1,0 +1,55 @@
+@import './setup.css';
+body {
+    padding: 70px;
+    height: 2000px;
+}
+
+h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#footer .form {
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: -50px;
+    background: #fff;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 20%);
+}
+
+.form .row div {
+    padding: 2px;
+}
+
+.btn-round {
+    border-width: 1px;
+    border-radius: 30px !important;
+    padding: 11px 23px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.contac ul li {
+    line-height: 40px;
+}
+
+#private {
+    text-decoration: none;
+    color: #212529;
+    font-weight: 200;
+}
+
+#private:hover {
+    color: black;
+}
+
+.copyright p {
+    color: #212529;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 15px;
+}
