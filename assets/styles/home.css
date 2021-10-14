@@ -28,7 +28,67 @@ body {
 }
 
 .about-us {
-    padding: 30px;
+    padding: 50px;
+}
+
+.title {
+    font-weight: 600;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.service {
+    padding: 20px 0 20px 20px;
+}
+
+.service-icon {
+    width: 64px;
+    margin-bottom: 10px;
+}
+
+.service-cnt>div {
+    margin-bottom: 25px;
+}
+
+.service-cnt div h4 {
+    font-weight: 500;
+    color: black;
+}
+
+.more {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.more:hover {
+    color: var(--white);
+}
+
+.member {
+    padding: 0px 50px;
+}
+
+.member .team-img {
+    text-align: center!important;
+}
+
+.member p {
+    text-align: center;
+}
+
+.team-img {
+    margin-bottom: 50px;
+}
+
+#name,
+#role {
+    color: var(--secondary);
+    letter-spacing: 1px;
+}
+
+.news {
+    padding: 20px;
 }
 
 #to-top {
