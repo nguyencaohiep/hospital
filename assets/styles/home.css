@@ -1,6 +1,34 @@
 @import './setup.css';
-.wrapper {
-    height: 1000px;
+body {
+    padding-top: 10px;
+}
+
+.slider {
+    background-image: url(../image/hsp.jpg);
+}
+
+.slider-text {
+    margin-bottom: 30px;
+}
+
+.slider-text p {
+    margin-bottom: 10px;
+}
+
+.slider-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    bottom: -40px;
+}
+
+.slider-form>div {
+    padding: 3px;
+}
+
+.about-us {
+    padding: 30px;
 }
 
 #to-top {

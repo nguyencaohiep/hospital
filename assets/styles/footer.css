@@ -1,12 +1,11 @@
 @import './setup.css';
-body {
-    padding: 70px;
-    height: 2000px;
-}
-
 h5 {
     text-transform: uppercase;
     font-weight: 600;
+}
+
+#footer {
+    margin-top: 300px;
 }
 
 #footer .form {

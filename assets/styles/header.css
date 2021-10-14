@@ -1,16 +1,18 @@
 @import "./setup.css";
-body {
+
+/* body {
     width: 100%;
     padding-top: 10px;
     height: 1000px;
-}
+} */
 
-.container {
+
+/* .container {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin: auto;
-}
+} */
 
 .row {
     display: -ms-flexbox;
@@ -22,20 +24,11 @@ body {
 }
 
 .main_header #header {
-    padding: 25px 10px 80px 10px;
+    padding: 10px 20px 10px 20px;
 }
 
-.main_header #navbar {
-    margin-top: -20px;
-    position: relative;
-    z-index: 99;
-}
-
-.main_header #navbar .navbar {
-    z-index: 999;
-    box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 7%);
-    padding: 0 20px;
-    border-radius: .25rem;
+#top-nav {
+    padding: 0 30px;
 }
 
 #top-nav p {
@@ -43,6 +36,10 @@ body {
 }
 
 #navbarMenu ul {
-    width: 70%;
+    width: 80%;
     justify-content: space-around;
+}
+
+#navbarMenu a:hover {
+    color: var(--teal);
 }
