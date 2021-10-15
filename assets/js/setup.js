@@ -49,7 +49,6 @@ function includeHTML() {
 
 function backToTop() {
     const toTop = document.getElementById("to-top");
-    console.log(toTop);
     window.addEventListener("scroll", () => {
         if (window.pageYOffset > 100) {
             toTop.classList.add("active");

@@ -1,0 +1,11 @@
+body {
+    padding-top: 10px;
+}
+
+.img-us {
+    background-image: url("../image/about-us/about-us.jpg");
+}
+
+.content {
+    padding: 25px;
+}
