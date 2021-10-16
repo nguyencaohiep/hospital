@@ -1,98 +1,97 @@
-@import './setup.css';
-body {
-    padding-top: 10px;
-}
-
-.slider {
-    background-image: url(../image/hsp.jpg);
-}
-
-.slider>div {
-    padding-top: 100px;
-    height: 100%;
-}
-
-.slider-text {
-    margin-bottom: 30px;
-}
-
-.slider-text p {
-    margin-bottom: 10px;
-}
-
-.slider-form {
-    background-color: white;
-    border-radius: 15px;
-    padding: 20px;
-    position: relative;
-    bottom: -40px;
-    box-shadow: 5px 5px 10px black;
-}
-
-.slider-form>div {
-    padding: 3px;
-}
-
-.about-us {
-    padding: 50px;
-}
-
-.title {
-    font-weight: 600;
-    color: black;
-    margin-bottom: 15px;
-}
-
-.service {
-    padding: 20px 0 20px 20px;
-}
-
-.service-icon {
-    width: 64px;
-    margin-bottom: 10px;
-}
-
-.service-cnt>div {
-    margin-bottom: 25px;
-}
-
-.service-cnt div h4 {
-    font-weight: 500;
-    color: black;
-}
-
-.more {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: 400;
-}
-
-.more:hover {
-    color: var(--white);
-}
-
-.member {
-    padding: 0px 50px;
-}
-
-.member .team-img {
-    text-align: center!important;
-}
-
-.member p {
-    text-align: center;
-}
-
-.team-img {
-    margin-bottom: 50px;
-}
-
-#name,
-#role {
-    color: var(--secondary);
-    letter-spacing: 1px;
-}
-
-.news {
-    padding: 20px;
-}
+ body {
+     padding-top: 10px;
+ }
+ 
+ .slider {
+     background-image: url(../image/hsp.jpg);
+ }
+ 
+ .slider>div {
+     padding-top: 100px;
+     height: 100%;
+ }
+ 
+ .slider-text {
+     margin-bottom: 30px;
+ }
+ 
+ .slider-text p {
+     margin-bottom: 10px;
+ }
+ 
+ .slider-form {
+     background-color: white;
+     border-radius: 15px;
+     padding: 20px;
+     position: relative;
+     bottom: -40px;
+     box-shadow: 5px 5px 10px black;
+ }
+ 
+ .slider-form>div {
+     padding: 3px;
+ }
+ 
+ .about-us {
+     padding: 50px;
+ }
+ 
+ .title {
+     font-weight: 600;
+     color: black;
+     margin-bottom: 15px;
+ }
+ 
+ .service {
+     padding: 20px 0 20px 20px;
+ }
+ 
+ .service-icon {
+     width: 64px;
+     margin-bottom: 10px;
+ }
+ 
+ .service-cnt>div {
+     margin-bottom: 25px;
+ }
+ 
+ .service-cnt div h4 {
+     font-weight: 500;
+     color: black;
+ }
+ 
+ .more {
+     color: var(--white);
+     text-decoration: none;
+     font-weight: 400;
+ }
+ 
+ .more:hover {
+     color: var(--white);
+ }
+ 
+ .member {
+     padding: 0px 50px;
+ }
+ 
+ .member .team-img {
+     text-align: center!important;
+ }
+ 
+ .member p {
+     text-align: center;
+ }
+ 
+ .team-img {
+     margin-bottom: 50px;
+ }
+ 
+ #name,
+ #role {
+     color: var(--secondary);
+     letter-spacing: 1px;
+ }
+ 
+ .news {
+     padding: 20px;
+ }

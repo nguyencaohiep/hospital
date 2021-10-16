@@ -1,3 +1,3 @@
-const footer = "include-footer";
+const footer = "include";
 var includeFooter = document.querySelectorAll(`[${footer}]`);
 console.log(includeFooter)
