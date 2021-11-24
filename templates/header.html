@@ -1,88 +1,140 @@
 <head>
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="icon" href="../assets/image/logo.png" sizes="32x32">
+    <!-- <link rel="stylesheet" href="../assets/styles/setup.css"> -->
     <link rel="stylesheet" href="../assets/styles/header.css">
-    <link rel="stylesheet" href="../assets/styles/setup.css">
 </head>
 
 <body>
-    <div class="main_header">
-        <section id="top-nav">
-            <div class="row">
-                <div class="col-lg-6 col-md-7" style="align-items: center;">
-                    <div class="left d-flex">
-                        <p style="color:black;letter-spacing:2px;">
-                            <i class="fas fa-envelope"></i> ptitcare@gmail.com</p>
-                        <p style="color:black;letter-spacing:2px">
-                            <i class="fas fa-phone-alt"></i> +8412345678</p>
+    <div class="header">
+        <div class="header-top">
+            <div class="col-2 logo">
+                <a class="navbar-brand" style="width: 100%;">
+                Ptitcare</a>
+            </div>
+            <div class="col-6 search_pc">
+                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+            </div>
+            <button type="button" class="btn-primary">Gửi câu hỏi</button>
+            <button type="button" class="btn-primary">Đặt lịch khám</button>
+        </div>
+        <div class="navi">
+            <label class="toggle-nav" for="navigation">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="navigation" hidden>
+            <label for="navigation" class="overlay"></label>
+            <div class="navigation_for_moblie">
+                <div class="logo d-flex">
+                    <a class="navbar-brand">
+                    Ptitcare</a>
+                    <label for="navigation" class="toggle-nav"><i class="far fa-times-circle"></i></label>
+                </div>
+                <div class=" nav-item nav-item-cnt-mb">
+                    <a class="nav-link" href="./home.html">Trang chủ</a>
+                </div>
+                <div class=" nav-item nav-item-cnt-mb">
+                    <a class="nav-link" href="./about-us.html" role="button">Giới thiệu<i class="fas fa-caret-right"></i></a>
+                    <div class="w-100 content">
+                        <li><a class="dropdown-item" href="#">Giới thiệu chung</a></li>
+                        <li><a class="dropdown-item" href="#">Đội ngũ bác sĩ</a></li>
+                        <li><a class="dropdown-item" href="#">Cơ sở vật chất</a></li>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-5 mb-2">
-                    <div class="text-right">
-                        <a href="./sign.html" class="btn btn-success">Đăng nhập</a>
+                <div class=" nav-item nav-item-cnt-mb">
+                    <a class="nav-link" href="#">Chuyên khoa<i class="fas fa-caret-right"></i></a>
+                    <div class="d-flex content" style="width:200%;">
+                        <ul class="w-100">
+                            <li><a class="dropdown-item" href="#">Khoa dược</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa ngoại</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa khám bệnh</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa chuẩn đoán hình ảnh</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa nội</a></li>
+                        </ul>
+                        <ul class="w-100">
+                            <li><a class="dropdown-item" href="#">Liên khoa Mắt-TMH-RHM</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa xét nghiệm</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa nhi</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa phụ sản</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa kiểm soát nhiễm khuẩn</a></li>
+                        </ul>
                     </div>
+                </div>
+                <div class=" nav-item nav-item-cnt-mb">
+                    <a class="nav-link" href="./service.html">Dịch vụ<i class="fas fa-caret-right"></i></a>
+                    <div class="w-100 content">
+                        <li><a class="dropdown-item" href="#">Thai sản trọn gói</a></li>
+                        <li><a class="dropdown-item" href="#">Tầm soát ung thư</a></li>
+                        <li><a class="dropdown-item" href="#">Tư vấn và tiêm chủng vaccine</a></li>
+                        <li><a class="dropdown-item" href="#">Các gói khám sức khỏe</a></li>
+                        <li><a class="dropdown-item" href="#">Khám bệnh tại nhà</a></li>
+                        <li><a class="dropdown-item" href="#">Gói Ortho-K</a></li>
+                    </div>
+                </div>
+                <div class=" nav-item nav-item-cnt-mb">
+                    <a class="nav-link" href="#">Hướng dẫn</a>
+                </div>
+                <div class=" nav-item nav-item-cnt-mb">
+                    <a class="nav-link" href="./lien-he.html">Liên hệ</a>
                 </div>
             </div>
-        </section>
-        <header id="header" class="bg-success">
-            <div class="head">
-                <div class="row">
-                    <div class="col-sm-5 col-lg-5">
-                        <div class="left">
-                            <!-- <i class="fas fa-hospital" style="font-size: 20px;"></i> -->
-                            <a href="./home.html" class="navbar-brand" style="text-transform: uppercase;color:var(--white); letter-spacing: 5px;">
-                                            ptitcare
-                                        </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-7 col-lg-7">
-                        <div class="text-right">
-                            <p class="col-white m-b-0 p-t-5" style="letter-spacing:2px">
-                                <i class="far fa-clock"></i> T2 - T6 : 8:00 - 17:00
-                            </p>
-                            <p class="col-white m-b-0 p-t-5" style="letter-spacing:2px">
-                                <i class="fas fa-map-marked-alt"></i> Km10 Nguyễn Trãi - Hà Đông
-                            </p>
-                        </div>
+            <div class="navigation_for_pc">
+                <div class=" nav-item nav-item-cnt">
+                    <a class="nav-link" href="./home.html">Trang chủ</a>
+                </div>
+                <div class=" nav-item nav-item-cnt">
+                    <a class="nav-link dropdown-toggle" href="./about-us.html" role="button">Giới thiệu</a>
+                    <div class="w-100 content">
+                        <li><a class="dropdown-item" href="#">Giới thiệu chung</a></li>
+                        <li><a class="dropdown-item" href="#">Đội ngũ bác sĩ</a></li>
+                        <li><a class="dropdown-item" href="#">Cơ sở vật chất</a></li>
                     </div>
                 </div>
-            </div>
-        </header>
-        <nav class="navbar bg-light navbar-light navbar-expand-lg">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-					        <span class="navbar-toggler-icon"></span>
-				         </button>
-                <div class="navbar-collapse collapse" id="navbarMenu">
-                    <ul class="navbar-nav mr-auto d-flex">
-                        <li class="nav-item">
-                            <a href="./about-us.html" class="nav-link">Giới thiệu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Dịch vụ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Phòng ban</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Đội ngũ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Liên hệ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link">Covid - 19</a>
-                        </li>
-                    </ul>
-                    <form action="" class="d-flex">
-                        <input type="text" class="form-control me-2" placeholder="Search">
-                        <button class="btn btn-success">Search</button>
-                    </form>
+                <div class=" nav-item nav-item-cnt">
+                    <a class="nav-link dropdown-toggle" href="#">Chuyên khoa</a>
+                    <div class="d-flex content" style="width:200%;">
+                        <ul class="w-100">
+                            <li><a class="dropdown-item" href="#">Khoa dược</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa ngoại</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa khám bệnh</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa chấn thương</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa nội</a></li>
+                        </ul>
+                        <ul class="w-100">
+                            <li><a class="dropdown-item" href="#">Liên khoa Mắt-TMH-RHM</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa xét nghiệm</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa nhi</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa phụ sản</a></li>
+                            <li><a class="dropdown-item" href="#">Khoa nhiễm khuẩn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" nav-item nav-item-cnt">
+                    <a class="nav-link dropdown-toggle" href="./service.html">Dịch vụ</a>
+                    <div class="w-100 content">
+                        <li><a class="dropdown-item" href="#">Thai sản trọn gói</a></li>
+                        <li><a class="dropdown-item" href="#">Tầm soát ung thư</a></li>
+                        <li><a class="dropdown-item" href="#">Tư vấn và tiêm chủng</a></li>
+                        <li><a class="dropdown-item" href="#">Các gói khám sức khỏe</a></li>
+                        <li><a class="dropdown-item" href="#">Khám bệnh tại nhà</a></li>
+                        <li><a class="dropdown-item" href="#">Gói Ortho-K</a></li>
+                    </div>
+                </div>
+                <div class=" nav-item nav-item-cnt">
+                    <a class="nav-link" href="#">Hướng dẫn</a>
+                </div>
+                <div class=" nav-item nav-item-cnt">
+                    <a class="nav-link" href="./lien-he.html">Liên hệ</a>
                 </div>
             </div>
-        </nav>
+        </div>
     </div>
+
+    <script>
+    </script>
+
 </body>
 
 </html>

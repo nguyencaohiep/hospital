@@ -1,97 +1,370 @@
- body {
-     padding-top: 10px;
- }
- 
- .slider {
-     background-image: url(../image/hsp.jpg);
- }
- 
- .slider>div {
-     padding-top: 100px;
-     height: 100%;
- }
- 
- .slider-text {
-     margin-bottom: 30px;
- }
- 
- .slider-text p {
-     margin-bottom: 10px;
- }
- 
- .slider-form {
-     background-color: white;
-     border-radius: 15px;
-     padding: 20px;
-     position: relative;
-     bottom: -40px;
-     box-shadow: 5px 5px 10px black;
- }
- 
- .slider-form>div {
-     padding: 3px;
- }
- 
- .about-us {
-     padding: 50px;
- }
- 
- .title {
-     font-weight: 600;
-     color: black;
-     margin-bottom: 15px;
- }
- 
- .service {
-     padding: 20px 0 20px 20px;
- }
- 
- .service-icon {
-     width: 64px;
-     margin-bottom: 10px;
- }
- 
- .service-cnt>div {
-     margin-bottom: 25px;
- }
- 
- .service-cnt div h4 {
-     font-weight: 500;
-     color: black;
- }
- 
- .more {
-     color: var(--white);
-     text-decoration: none;
-     font-weight: 400;
- }
- 
- .more:hover {
-     color: var(--white);
- }
- 
- .member {
-     padding: 0px 50px;
- }
- 
- .member .team-img {
-     text-align: center!important;
- }
- 
- .member p {
-     text-align: center;
- }
- 
- .team-img {
-     margin-bottom: 50px;
- }
- 
- #name,
- #role {
-     color: var(--secondary);
-     letter-spacing: 1px;
- }
- 
- .news {
-     padding: 20px;
- }
+h4 {
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 0 !important;
+}
+
+/* top slide */
+.top-slider {
+    position: relative;
+}
+
+.slick-prev, .slick-next {
+    background-color: white;
+    color:black;
+    border-radius: 50% !important;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev {
+    left: 10px;
+    z-index: 5;
+}
+
+.slick-next{
+    right:10px;
+}
+
+.slick-prev:hover {
+    background-color: #74b9ff;
+    color: white;
+}
+
+.slick-next:hover {
+    background-color: #74b9ff;
+    color: white;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots button{
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    outline: none;
+    border-radius: 100rem !important;
+    padding: 0 !important;
+    background-color: white;
+    margin:0 10px;
+    transition: all 0.2s linear;
+}
+
+.slick-dots .slick-active button{
+    background-color: #74b9ff;
+}
+
+/* booking */
+.booking {
+    background-color: #f3f3f4;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.booking-item {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 10px;
+    position: relative;
+   text-align: center;
+}
+
+.input-field {
+    height: 45px;
+    margin: 5px 0px;
+
+}
+
+.input-field input{ 
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid #dde0e2;
+    padding: 0px 20px;
+    font-size: 18px;
+}
+
+.input-field:nth-child(4){
+    position: relative;
+}
+
+.input-field i{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+input[type="date"]:before {
+    color: lightgrey;
+    content: attr(placeholder) !important;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before {
+    content: '' !important;
+}
+
+.more-details{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    transition: all 0.3s linear;
+    position: absolute;
+    left: 10px;
+    bottom: 20px; 
+}
+
+.more-details a {
+    width: 100%;
+    height: 100%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.more-details:hover {
+    background-color: white;
+    border: 1px solid #0d6efd;
+}
+
+.more-details a:hover {
+    color: #0d6efd;
+
+}
+.booking-img img{
+    height: 100%;
+    width: 100%;
+}
+
+/* introduce */
+.introduce {
+    padding: 20px 0;
+}
+.introduce span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.introduce p{
+    font-size: 18px;
+}
+
+.introduce p:not(:nth-child(3)){
+    font-weight: bold;
+}
+
+.introduce-box {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.introduce-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.introduce-box img:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.introduce .details {
+    transition: all 0.3s ease-in-out;
+}
+
+.introduce .details a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.introduce .details a:hover{
+    color: #0d6efd;
+}
+
+.introduce .details a:hover i{
+    transform: rotate(180deg);
+}
+
+.introduce .details i {
+    transition: transform .5s ease-in-out;
+}
+
+/* service */
+.service {
+    background-image: url("../image/service-slider/service_background.png");
+    height: 700px;
+    padding: 15px;
+    position: relative;
+}
+
+.service .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service .title a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.service .title a:hover {
+    color: #0d6efd;
+}
+
+.service .title a:hover i{
+    transform: rotate(180deg);
+}
+
+.service .title i {
+    transition: transform .5s ease-in-out;
+}
+
+[data-aos="fade-up"] {
+    transition-duration: .5s;
+}
+
+.service-slider {
+    height:600px;
+}
+
+.service-item {
+    width: 350px !important;
+    margin: 0px 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.service-item-img {
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+}
+
+.service-item-img a img {
+    width: 100%;
+    height: 100%;
+    transition: scale 0.6s ease-in-out;
+}
+
+.service-item-img a img:hover {
+    transform: scale(1.3);
+}
+
+.service-item:nth-child(3n+1) .service-item-cnt{
+    background-color: #02a15e;
+}
+
+.service-item:nth-child(3n+2) .service-item-cnt{
+    background-color: #068a8b;
+}
+
+.service-item:nth-child(3n) .service-item-cnt{
+    background-color: #017cab;
+}
+
+.service-item-cnt {
+    padding: 15px;
+    color:white;
+    transition: all 0.5s linear;
+    font-size: 18px;
+}
+
+.service-item-cnt p {
+    margin-top: 10px;
+}
+
+.service-item-cnt a {
+    color:white;
+    text-decoration: none;
+}
+
+.service-item-cnt a:hover {
+    color: #e57709;
+}
+
+.service-item-cnt .details {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.service .slick-dots {
+    position: absolute;
+    bottom : 20px;
+}
+
+/* hero */
+.hero-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-title i {
+    transition: all .5s ease-in-out;
+}
+
+.hero-title a:hover i {
+    transform: rotate(180deg);
+}
+
+.item-introduce {
+    text-align: center;
+}
+
+.item-introduce .image {
+    display: flex;
+    justify-content: center;
+    background-color: #dde0e2;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.item-introduce .image a img{
+    height: 500px !important;
+    width: 300px !important;
+}
+
+.introduction h3 {
+    text-transform: uppercase;
+    color:#0d6efd;
+    font-weight: bold;
+}
+
+.cnt-item>div:not(:first-child) {
+    margin-top: 20px;
+}
+
+.cnt-title {
+    color:#0d6efd;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cnt-detail {
+    border-left: 2px solid #0d6efd;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+

@@ -5,7 +5,8 @@ h5 {
 }
 
 #footer {
-    margin-top: 100px;
+    padding-top: 20px;
+    background-color: #f2f2f2;
 }
 
 #footer .form {
@@ -49,7 +50,6 @@ h5 {
 .copyright p {
     color: #212529;
     text-align: center;
-    letter-spacing: 1px;
     font-weight: 100;
     font-size: 15px;
 }

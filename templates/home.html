@@ -1,273 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ptitcare - Trang chủ</title>
-    <link rel="stylesheet" href="../assets/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
+    <title>Ptitcare</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../assets/styles/home.css">
     <link rel="icon" href="../assets/image/logo.png" sizes="32x32">
-    <script src="../assets/js/setup.js">
-    </script>
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="../assets/styles/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../assets/js/setup.js"></script>
 </head>
-
 <body>
-    <div>
-        <!-- <div include-header="header.html"></div> -->
+    <div class="lds-dual-ring center"></div>
+    <div class="box">
         <div file-include="header.html"></div>
-        <div class="slider">
-            <div class="container">
-                <div class="slider-text">
-                    <p>
-                        <h3>Chào mừng đến</h3>
-                    </p>
-                    <p>
-                        <h1 style="letter-spacing: 2px;" class="text-success">PTITCARE</h1>
-                    </p>
-                    <p style="color:black;">Gửi trọn niềm tin!</p>
-                </div>
-                <div class="slider-form row">
-                    <h3 class="col-12">Đặt lịch khám online.</h3>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="form-group">
-                            <input type="text" placeholder="Họ và tên..." class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-6">
-                        <div class="form-group">
-                            <input type="text" placeholder="Địa chỉ" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-6">
-                        <div class="form-group">
-                            <input type="text" placeholder="Số điện thoại" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-6">
-                        <select class="form-control">
-                            <option selected="selected">Giới tính</option>
-                            <option>Nam</option>
-                            <option>Nữ</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-6">
-                        <select class="form-control">
-                            <option selected="selected">Lựa chọn khoa khám bệnh</option>
-                            <option>Tai - Mũi - Họng</option>
-                            <option>Khoa Ngoại</option>
-                            <option>Khoa Tim Mạch</option>
-                            <option>Khoa Chấn Thương Chỉnh Hình</option>
-                            <option>Khoa Ung Bướu</option>
-                            <option>Khoa Nội Hô Hấp</option>
-                            <option>Khoa Cơ Xương Khớp</option>
-                            <option>Khoa Nội Hô Hấp</option>
-                        </select>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <button class="btn btn-success btn-block btn-round">Gửi</button>
-                    </div>
-                </div>
-            </div>
+        <div class="top-slider">
+            <div class="image-item">
+                <a href="">
+                    <img src="../assets/image/slider/slider1.png" alt="">
+                </a>
+            </div> 
+            <div class="image-item">
+                <a href="">
+                    <img src="../assets/image/slider/slider2.png" alt="">
+                </a>
+            </div>  
+            <div class="image-item">
+                <a href="">
+                    <img src="../assets/image/slider/slider3.png" alt="">
+                </a>
+            </div>  
+            <div class="image-item">
+                <a href="">
+                    <img src="../assets/image/slider/slider4.png" alt="">
+                </a>
+            </div>  
+            <div class="image-item">
+                <a href="">
+                    <img src="../assets/image/slider/slider5.png" alt="">
+                </a>
+            </div> 
         </div>
-        <div class="about-us mt-5">
+        <div class="booking mt-5" data-aos="fade-up" data-aos-duration="2000">
             <div class="container">
-                <div class="row title">
-                    <div class="col-12">
-                        <h3>Giới thiệu về chúng tôi</h3>
-                    </div>
-                </div>
                 <div class="row">
-                    <div class="col-4">
-                        <img src="../assets/image/hero-about-us.jpg" alt="">
+                    <div class="booking-item col-4">
+                        <h3>Đặt lịch khám bệnh</h3>
+                        <div class="input-field">
+                            <input type="text" placeholder="Họ và tên (*)">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Số điện thoại (*)">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Ngày đặt lịch" onfocus="(this.type = 'date')">
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Nhu cầu khám (không bắt buộc)">
+                        </div>
+                        <div class="input-field mt-4">
+                            <button type="submit" class="btn btn-primary">Đặt lịch khám</button>
+                        </div>
+                        <div class="more-details shake">
+                            <a href="">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <h4>Sứ mệnh và tầm nhìn</h4>
-                        <p style="letter-spacing: 1px;">Dựa trên nền tảng truyền thống, các giá trị lớn của ngành y Việt Nam từ xưa đến nay, đồng thời mong muốn mang lại cho người dân dịch vụ khám chữa bệnh chất lượng cao về y khoa, tiếp cận phương pháp, kỹ thuật và phác đồ hiện đại,
-                            được hưởng các dịch vụ cao cấp như ở nước ngoài, Ptitcare đã được thành lập. Ngay từ khi mới bắt đầu đi vào hoạt động, chúng tôi đã chú trọng việc xây dựng đội ngũ chuyên gia bác sĩ giỏi về chuyên môn, nhiều kinh nghiệm,bệnh
-                            viện đã quy tụ được đội ngũ chuyên gia hàng đầu từ nhiều lĩnh vực như nam khoa tiết niệu, sản phụ khoa, nhi khoa, hô hấp, cơ xương khớp, hỗ trợ sinh sản, tai mũi họng, thần kinh…</p>
-                        <a href="./about-us.html" class="btn btn-round btn-success mt-4">Xem thêm</a>
+                    <div class="booking-img col-8">
+                        <img src="../assets/image/book-exam.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="service mt-4 bg-success">
+        <div class="introduce mt-5" data-aos="fade-up" data-aos-duration="2000">
             <div class="container">
-                <div class="row title">
-                    <div class="col-12">
-                        <h3>Dịch vụ nổi bật</h3>
-                    </div>
-                </div>
-                <div class="row service-cnt">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-icon">
-                            <img src="../assets/image/service/cancer.png" alt="">
-                        </div>
-                        <h4>Tầm soát ung thư</h4>
-                        <a href="" class="more">Xem thêm</a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-icon">
-                            <img src="../assets/image/service/virus.png" alt="">
-                        </div>
-                        <h4>Covid - 19</h4>
-                        <a href="" class="more">Xem thêm</a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-icon">
-                            <img src="../assets/image/service/cardiology.png" alt="">
-                        </div>
-                        <h4>Tim mạch</h4>
-                        <a href="" class="more">Xem thêm</a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-icon">
-                            <img src="../assets/image/service/arthritis.png" alt="">
-                        </div>
-                        <h4>Xương khớp</h4>
-                        <a href="" class="more">Xem thêm</a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-icon">
-                            <img src="../assets/image/service/orthodontic.png" alt="">
-                        </div>
-                        <h4>Nha Khoa</h4>
-                        <a href="" class="more">Xem thêm</a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-icon">
-                            <img src="../assets/image/service/lungs.png" alt="">
-                        </div>
-                        <h4>Hô hấp</h4>
-                        <a href="" class="more">Xem thêm</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="team mt-4">
-            <div class="container">
-                <div class="row title">
-                    <div class="col-12">
-                        <h3>Đội ngũ bác sĩ - chuyên gia</h3>
-                    </div>
-                </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-3 member">
-                        <div class="team-img">
-                            <img src="../assets/image/team/team-member-01.png" alt="">
+                    <div class="introduce-img col-6">
+                        <div class="introduce-box">
+                            <img src="../assets/image/khong-gian-benh-vien.jpg" alt="">
                         </div>
-                        <p id="name">Dr.John</p>
-                        <p id="role">Nha khoa</p>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 member">
-                        <div class="team-img">
-                            <img src="../assets/image/team/team-member-02.png" alt="">
+                    <div class="col-6 introduce-content">
+                        <h3>Hệ thống Bệnh viện cao cấp hàng đầu Việt Nam với sứ mệnh</h3>
+                        <p>"<span style="color:#0c9849">Nâng niu từng sự sống</span>"</p>
+                        <p>Ptitcare là địa chỉ uy tín về khám chữa bệnh, với đội ngũ chuyên gia - bác sĩ hàng đầu, trang thiết bị hiện đại, cùng các phác đồ điều trị hiệu quả, khoa học mang đến dịch vụ khám, điều trị, chăm sóc sức khỏe cao cấp, toàn diện với chi phí hợp lý.</p>
+                        <div class="details">
+                            <a href="" src="">
+                                <i class="fas fa-plus-circle"></i>  Xem thêm
+                            </a>
                         </div>
-                        <p id="name">Dr.Amelia</p>
-                        <p id="role">Khoa hô hấp</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 member">
-                        <div class="team-img">
-                            <img src="../assets/image/team/team-member-03.png" alt="">
-                        </div>
-                        <p id="name">Dr.Jack</p>
-                        <p id="role">Khoa tim mạch</p>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 member">
-                        <div class="team-img">
-                            <img src="../assets/image/team/team-member-04.png" alt="">
-                        </div>
-                        <p id="name">Dr.Charlie</p>
-                        <p id="role">Khoa tai - mũi - họng</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="news mt-4 bg-success">
+        <div class="service mt-5" data-aos="fade-up" data-aos-duration="2000">
             <div class="container">
-                <div class="row title">
-                    <div class="col-12">
-                        <h3>Tin tức - sự kiện</h3>
+                <div class="row">
+                    <div class="title">
+                        <h3>Dịch vụ của chúng tôi</h3>
+                        <a href="" src="">
+                            <i class="fas fa-plus-circle"></i>  Xem thêm
+                        </a>
                     </div>
-                </div>
-                <div class="row news-cnt">
-                    <div class="row mt-3">
-                        <div class="col-4">
-                            <img src="../assets/image/news/new1.jpg" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h4>
-                                Trẻ bị viêm họng cấp, mẹ đừng lơ là!
-                            </h4>
-                            <p style="letter-spacing: 0px;">
-                                Trẻ bị viêm họng cấp thực chất chỉ là một viêm nhiễm của đường hô hấp trên không đáng lo ngại. Tuy nhiên, bố mẹ chớ nên chủ quan bởi bệnh này cũng dễ biến chứng khiến con gặp nguy hiểm nếu không được điều trị đúng cách.
-                            </p>
-                            <a href="" class="btn btn-round btn-warning mt-2">Xem thêm</a>
-                        </div>
+                    <div class="service-content col-9">
+                        <p style="font-size: 16px; font-weight: 400;">Sở hữu không gian khám chữa bệnh văn minh, sang trọng, hiện đại, Ptitcare chú trọng đầu tư đồng bộ hệ thống trang thiết bị hiện đại hàng đầu thế giới, hỗ trợ hiệu quả cho việc chẩn đoán và điều trị.</p>
                     </div>
-                    <div class="row mt-3">
-                        <div class="col-4">
-                            <img src="../assets/image/news/new2.jpg" alt="">
+                    <div class="service-slider">
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <a href="">
+                                    <img src="../assets/image/service-slider/anh-dai-dien-thai-san-tron-goi-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="service-item-cnt">
+                                <a href="">
+                                    <h4>Thai sản trọn gói</h4>
+                                </a>
+                                <p>Thai sản trọn gói là dịch vụ sinh con trọn gói uy tín hàng đầu tại Hà Nội được cung cấp bởi BVĐK Phương Đông....</p>
+                                <div class="details">
+                                    <a href="" src="">
+                                        <i class="fas fa-plus-circle"></i>  Xem thêm
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <h4>
-                                Tiêm phòng uốn ván sau chấn thương.
-                            </h4>
-                            <p style="letter-spacing: 0px;">
-                                Khi bị chấn thương, trước hết cần bình tĩnh xử lý vết thương đúng cách để làm chậm quá trình xâm nhập của vi khuẩn. Sau đó, người bị thương cần nhanh chóng đi tiêm phòng uốn ván. Vậy thời điểm lý tưởng để tiêm phòng uốn ván sau chấn thương là bao lâu?
-                            </p>
-                            <a href="" class="btn btn-round btn-warning mt-2">Xem thêm</a>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <a href="">
+                                    <img src="../assets/image/service-slider/xet-nghiem-vi-chat-cho-tre-em1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="service-item-cnt">
+                                <a href="">
+                                    <h4>Gói xét nghiệm vi chất cho trẻ em</h4>
+                                </a>
+                                <p>Gói xét nghiệm sức khỏe tổng quát vi chất cho trẻ em giúp đánh giá chính xác tình trạng dinh dưỡng của trẻ...</p>
+                                <div class="details">
+                                    <a href="" src="">
+                                        <i class="fas fa-plus-circle"></i>  Xem thêm
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-4">
-                            <img src="../assets/image/news/new3.jpg" alt="">
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <a href="">
+                                    <img src="../assets/image/service-slider/goi-kham-sang-loc-ung-thu-tien-liet-tuyen.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="service-item-cnt">
+                                <a href="">
+                                    <h4>Gói khám sàng lọc ung thư tiền liệt tuyến</h4>
+                                </a>
+                                <p>Ung thư tiền liệt tuyến rất nguy hiểm, đe dọa nặng nề đến sức khỏe nam giới. Vì vậy các bác sĩ luôn khuyến nghị...</p>
+                                <div class="details">
+                                    <a href="" src="">
+                                        <i class="fas fa-plus-circle"></i>  Xem thêm
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-8">
-                            <h4>
-                                Bảng cân nặng bé trai, cân nặng bé gái chuẩn WHO
-                            </h4>
-                            <p style="letter-spacing: 0px;">
-                                Bảng đo chiều cao, cân nặng bé trai, cân nặng bé gái giúp mẹ nhận biết, theo dõi sức khỏe thể chất của con. Cùng tìm hiểu ngay bảng chiều cao cân nặng chuẩn của trẻ sơ sinh và trẻ nhỏ từ 0 đến 5 tuổi do Tổ chức Y tế thế giới (WHO) đưa ra trong bài viết
-                                này.
-                            </p>
-                            <a href="" class="btn btn-round btn-warning mt-2">Xem thêm</a>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <a href="">
+                                    <img src="../assets/image/service-slider/goi-sang-loc-ung-thu-co-tu-cung.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="service-item-cnt">
+                                <a href="">
+                                    <h4>Gói khám sàng lọc ung thư cổ tử cung</h4>
+                                </a>
+                                <p>Gói khám sàng lọc ung thư cổ tử cung đang ngày càng được nhiều phụ nữ lựa chọn. Bởi hiện nay, căn bệnh ung thư...</p>
+                                <div class="details">
+                                    <a href="" src="">
+                                        <i class="fas fa-plus-circle"></i>  Xem thêm
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-4">
-                            <img src="../assets/image/news/new4.jpg" alt="">
-                        </div>
-                        <div class="col-8">
-                            <h4>
-                                Xét nghiệm CRP và vai trò quan trọng ít người biết
-                            </h4>
-                            <p style="letter-spacing: 0px;">
-                                Khi được hỏi về một số loại xét nghiệm kiểm tra sức khỏe, có lẽ không nhiều người biết về xét nghiệm CRP. Tuy nhiên, nó thực sự rất quan trọng trong việc điều trị các tình trạng viêm nhiễm nghiêm trọng.
-                            </p>
-                            <a href="" class="btn btn-round btn-warning mt-2">Xem thêm</a>
+                        <div class="service-item">
+                            <div class="service-item-img">
+                                <a href="">
+                                    <img src="../assets/image/service-slider/chup-cat-lop-tam-soat-ung-thu-tuyen-giap.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="service-item-cnt">
+                                <a href="">
+                                    <h4>Gói khám sàng lọc ung thư tuyến giáp</h4>
+                                </a>
+                                <p>Tầm soát ung thư tuyến giáp là phương pháp y học hiện đại giúp phát hiện sớm các tổn thương tiền ung thư. Đây được...</p>
+                                <div class="details">
+                                    <a href="" src="">
+                                        <i class="fas fa-plus-circle"></i>  Xem thêm
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hero mt-5" data-aos="fade-up" data-aos-duration="2000">
+            <div class="container">
+                <div class="hero-title">
+                    <h3>Đội ngũ chuyên gia</h3>
+                    <div class="details">
+                        <a href="" src="">
+                           Tìm kiếm bác sĩ <i class="fas fa-plus-circle"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <p>Ptitcare quy tụ đội ngũ chuyên gia, bác sĩ, dược sĩ và điều dưỡng được đào tạo bài bản đến chuyên sâu tại Việt nam và nhiều nước có nên y học phát triển như Mỹ, Anh, Pháp... Luôn lấy người bệnh là trung tâm, chúng tôi cam kết mang lại dịch vụ chăm sóc sức khỏe toàn diện và chất lượng cao cho khách hàng.</p>
+                </div>
+                <div class="hero-slider mt-3">
+                    <div class="hero-item">
+                        <div class="row">
+                            <div class="item-introduce col-5">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="../assets/image/team-hero/bs-nguyen-trung-chinh.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="introduction mt-3">
+                                    <a href="">
+                                        <h3>nguyễn trung chính</h3>
+                                    </a>
+                                    <p>PGS.TS Bác sĩ Ung Bướu - Giám đốc bênh viện Ptitcare</p>
+                                </div>
+                            </div>
+                            <div class="cnt-item col-7">
+                                <div class="person">
+                                    <p  class="cnt-title"><i class="fas fa-user-md"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail"> 
+                                        <p>PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và Tế bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn bệnh nhân trên cả nước chẩn đoán và điều trị các vấn đề về ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực tế bào gốc.</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <p class="cnt-title"><i class="fas fa-trophy"></i>   Kinh nghiệm</p>
+                                    <div class="cnt-detail">
+                                        <p>Bác sĩ Nguyễn Trung Chính là người có nhiều kinh nghiệm trong chẩn đoán và điều trị các vấn đề về ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực tế bào gốc. Đặc biệt, bác sĩ là người trực tiếp thực hiện ca phẫu thuật ghép tế bào gốc tự thân chữa trị ung thư vú đầu tiên tại Việt Nam.</p>
+                                        <p class="mt-2">Bên cạnh công việc chính, PGS. TS Nguyễn Trung Chính vẫn luôn dành thời gian, tâm sức và trí lực cho nghiên cứu khoa học, có nhiều đóng góp cho ngành Ung thư và Huyết học – Truyền máu Việt Nam, Nhiều công trình khoa học của ông mang tính ứng dụng cao, rộng rãi trong y học.</p>
+                                    </div>
+                                </div>
+                                <div class="ach">
+                                    <p class="cnt-title"><i class="fas fa-star"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail">
+                                        <p>Với những đóng góp của mình, PGS. TS Nguyễn Trung Chính đã vinh dự được Đảng, Nhà nước, lãnh đạo các Bộ, Ban ngành trao tặng nhiều danh hiệu, phần thưởng cao quý:</p>
+                                        <p>Huân chương Chiến công hạng Nhất</p>
+                                        <p>Bằng khen của Tổng LĐLĐ Việt Nam về sáng kiến</p>
+                                        <p>Bằng khen của Bộ Tư lệnh QK III</p>
+                                        <p>Thầy thuốc Ưu tú, học hàm Phó Giáo sư</p>
+                                        <p>.....</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-item">
+                        <div class="row">
+                            <div class="item-introduce col-5">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="../assets/image/team-hero/bacs-si-bac-si-tuyet.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="introduction mt-3">
+                                    <a href="">
+                                        <h3>hoàng văn tuyết</h3>
+                                    </a>
+                                    <p>TTND.TS Bác sĩ cao cấp Nội khoa - Trưởng khoa khám bệnh</p>
+                                </div>
+                            </div>
+                            <div class="cnt-item col-7">
+                                <div class="person">
+                                    <p  class="cnt-title"><i class="fas fa-user-md"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail"> 
+                                        <p>Với kinh nghiệm gần 40 năm trong nghề, TTND.TS.BSCC Hoàng Văn Tuyết đã tham gia vào công tác khám chữa bệnh, phòng bệnh ở các bệnh viện tuyến Trung ương như: Bệnh viện Bạch Mai; Bệnh viện Nhiệt Đới Trung ương.</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <p class="cnt-title"><i class="fas fa-trophy"></i>   Kinh nghiệm</p>
+                                    <div class="cnt-detail">
+                                        <p>Bác sĩ Hoàng Văn Tuyết là người có nhiều kinh nghiệm trong các công tác phòng chống dịch quốc gia, như: dịch cúm AH5N1 năm 2005, dịch tiêu chảy  cấp năm 2007, dịch H1N1 năm 2009, dịch Ebola, dịch MERS – CoV, dịch sởi  … Ngoài ra, với tư cách là thành viên ban chỉ đạo xây dựng và áp dụng hệ thống quản lý chất lượng, BS Hoàng Văn Tuyết đã cùng Ban lãnh đạo, tập thể cán bộ CNV Bệnh viện Bạch Mai đưa Bệnh viện trở thành đơn vị đầu tiên trong Bộ Y tế triển khai đồng bộ hệ thống quản lý chất lượng ISO tại 100% các khoa, phòng, trung tâm.</p>
+                                    </div>
+                                </div>
+                                <div class="ach">
+                                    <p class="cnt-title"><i class="fas fa-star"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail">
+                                        <p>Thầy thuốc nhân dân (2017)</p>
+                                        <p>Huân chương Lao động hạng III</p>
+                                        <p>Bằng khen của Thủ tướng Chính phủ</p>
+                                        <p>Bằng khen của Bộ Y tế</p>
+                                        <p>Lưu niệm chương Vì sự nghiệp chăm sóc sức khỏe nhân dân</p>
+                                        <p>Kỷ niệm chương Vì sự nghiệp khoa học kỹ thuật</p>
+                                        <p>Kỷ niệm chương Vì thế hệ trẻ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-item">
+                        <div class="row">
+                            <div class="item-introduce col-5">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="../assets/image/team-hero/bs-nguyen-thi-thu-yen.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="introduction mt-3">
+                                    <a href="">
+                                        <h3>nguyễn thị thu yến</h3>
+                                    </a>
+                                    <p>Bác sĩ CKII Tai mũi họng - Trưởng Liên chuyên khoa Mắt - TMH - RHM</p>
+                                </div>
+                            </div>
+                            <div class="cnt-item col-7">
+                                <div class="person">
+                                    <p  class="cnt-title"><i class="fas fa-user-md"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail"> 
+                                        <p>BS CKII Nguyễn Thị Thu Yến là bác sĩ có nhiều kinh nghiệm trong khám chữa các bệnh lý Tai Mũi Họng. Không chỉ được đánh giá cao về trình độ chuyên môn, BS CKII Nguyễn Thị Thu Yến còn được sự nhiều người bệnh tin tưởng, đánh giá cao vì sự nhiệt tình, cởi mở của bác sĩ.</p>
+                                        <p>Bên cạnh việc thăm khám, điều trị thường quy, bác sĩ còn thực hiện các phẫu thuật Tai Mũi Họng. Bằng kinh nghiệm thực tiễn vững chắc, các ca phẫu thuật do bác sĩ Nguyễn Thị Thu Yến đảm nhận được thực hiện hiệu quả, an toàn, ít đau, tính thẩm mỹ cao.</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <p class="cnt-title"><i class="fas fa-trophy"></i>   Kinh nghiệm</p>
+                                    <div class="cnt-detail">
+                                        <p>Với kinh nghiệm hơn 35 năm trong nghề BSCKII Nguyễn Thị Thu Yến có thể thực hiện được nhiều kỹ thuật cao trong khám bệnh chữa bệnh và điều trị nội khoa cũng như phẫu thuật các bệnh lý Tai Mũi Họng như: nạo VA gây mê, gây tê; nội soi vi phẫu thanh quản; phẫu thuật nội soi mũi xoang; phẫu thuật nội soi chỉnh hình vách ngăn mũi...</p>
+                                    </div>
+                                </div>
+                                <div class="ach">
+                                    <p class="cnt-title"><i class="fas fa-star"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail">
+                                        <p>Kỷ niệm chương vì sức khỏe nhân dân</p>
+                                        <p>Các đề tài, công trình nghiên cứu khoa học</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-item">
+                        <div class="row">
+                            <div class="item-introduce col-5">
+                                <div class="image">
+                                    <a href="">
+                                        <img src="../assets/image/team-hero/bs-tuong-van.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="introduction mt-3">
+                                    <a href="">
+                                        <h3>nguyễn thị tường vân</h3>
+                                    </a>
+                                    <p>TTUT.ThS.BSCKI Nội khoa - Trưởng khoa Nội</p>
+                                </div>
+                            </div>
+                            <div class="cnt-item col-7">
+                                <div class="person">
+                                    <p  class="cnt-title"><i class="fas fa-user-md"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail"> 
+                                        <p>Với kinh nghiệm hơn 40 năm trong nghề, TTUT.ThS.BSCKI Nội khoa Nguyễn Thị Tường Vân đã tham gia vào công tác khám chữa bệnh, phòng bệnh ở các bệnh viện tuyến Trung ương như: Bệnh viện Bạch Mai; Bệnh viện Nhiệt đới Trung ương.</p>
+                                    </div>
+                                </div>
+                                <div class="exp">
+                                    <p class="cnt-title"><i class="fas fa-trophy"></i>   Kinh nghiệm</p>
+                                    <div class="cnt-detail">
+                                        <p>Bác sĩ Nguyễn Thị Tường Vân là chuyên gia hơn 40 năm kinh nghiệm trong lĩnh vực Nội khoa, trực tiếp thăm khám và điều trị cho hàng nghìn bệnh nhân</p>
+                                    </div>
+                                </div>
+                                <div class="ach">
+                                    <p class="cnt-title"><i class="fas fa-star"></i>   Giới thiệu</p>
+                                    <div class="cnt-detail">
+                                        <p>Huân chương Lao động hạng III</p>
+                                        <p>Danh hiệu Thầy thuốc Ưu tú</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div file-include="footer.html"></div>
+        <a href="# "id="to-top">
+            <i class="fas fa-angle-up "></i>
+        </a>
     </div>
-    </div>
-    <!-- <div include-header="footer.html"></div> -->
-    <div file-include="footer.html"></div>
-    <a href="#" id="to-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-    </div>
-
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         includeHTML();
         backToTop();
+        AOS.init();
     </script>
+    <script src="../assets/js/loading.js"></script>
+    <script src="../assets/js/home.js"></script>
 </body>
-
-
 </html>

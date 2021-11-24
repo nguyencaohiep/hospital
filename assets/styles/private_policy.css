@@ -1,0 +1,5 @@
+@import './setup.css';
+.title-pri {
+    padding: 10px;
+    border-bottom: 2px solid var(--gray);
+}

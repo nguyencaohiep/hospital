@@ -1,3 +1,9 @@
+function sticky_header() {
+    var header = document.getElementById("includeHeader");
+    console.log(header.offsetHeight);
+}
+
+
 function includeHTML() {
     const ele = "file-include";
     var includeELE = document.querySelectorAll(`[${ele}]`);
