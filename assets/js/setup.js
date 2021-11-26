@@ -3,7 +3,6 @@ function sticky_header() {
     console.log(header.offsetHeight);
 }
 
-
 function includeHTML() {
     const ele = "file-include";
     var includeELE = document.querySelectorAll(`[${ele}]`);

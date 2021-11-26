@@ -6,7 +6,7 @@ function Validator(options) {
             input.classList.remove('valid');
             input.classList.add('invalid');
         } else {
-            check.style.color = "#00bfa6";
+            check.style.color = "#0d6efd";
             input.classList.remove('invalid');
             input.classList.add('valid');
         }

@@ -66,7 +66,7 @@ form.sign-in-form {
     width: 350px;
     border-radius: 25px;
     outline: none;
-    transition: .15s ease-in;
+    transition: all .15s ease-in;
 }
 
 .input-field {
@@ -102,7 +102,7 @@ form.sign-in-form {
     display: inline-block;
     background-color: transparent;
     padding: 0 5px;
-    color: var(--lightgreen);
+    color: #0d6efd;
     background-color: var(--white);
 }
 
@@ -111,7 +111,7 @@ form.sign-in-form {
 }
 
 .valid {
-    border-color: var(--lightgreen);
+    border-color: #4084eb;
 }
 
 #forgot {
@@ -129,7 +129,7 @@ form.sign-in-form {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
-    color: var(--teal);
+    color: #0d6efd;
 }
 
 .check {
@@ -144,9 +144,9 @@ form.sign-in-form {
 .sub {
     width: 100px;
     height: 30px;
-    border: 1px solid var(--teal);
+    border: 1px solid #0d6efd;
     border-radius: 25px;
-    background-color: var(--teal);
+    background-color: #0d6efd;
     font-size: 15px;
     font-weight: 600;
     margin: 20px;
@@ -158,7 +158,7 @@ form.sign-in-form {
 
 .btn {
     width: 150px;
-    background-color: var(--teal);
+    background-color: #0d6efd;
     border: none;
     outline: none;
     height: 49px;
@@ -172,7 +172,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-    background-color: var(--lightgreen);
+    background-color: #4084eb;
 }
 
 .panels-container {
@@ -193,7 +193,7 @@ form.sign-in-form {
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, var(--teal) 0%, var(--lightgreen) 100%);
+    background-image: linear-gradient(-45deg, #0d6efd 0%, #0c80ec 100%);
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;

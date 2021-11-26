@@ -28,7 +28,7 @@ html {
     margin: 8px;
     border-radius: 50%;
     border: 6px solid rgb(238, 241, 240);
-    border-color: rgb(28, 221, 131) transparent rgb(28, 221, 131) transparent;
+    border-color: rgb(13, 155, 249) transparent rgb(13, 155, 249) transparent;
     animation: lds-dual-ring 1.2s linear infinite;
 }
 
@@ -88,13 +88,14 @@ img {
 #to-top {
     position: fixed;
     display: flex;
-    background-color: #2891cc;
+    background-color: #007bff;
     bottom: 16px;
-    right: 16px;
-    height: 50px;
-    width: 50px;
+    right: 50%;
+    transform: translatex(-50%);
+    height: 40px;
+    width: 40px;
     color: black;
-    font-size: 30px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     text-decoration: none;

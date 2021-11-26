@@ -27,3 +27,22 @@ $('.hero-slider').slick({
     nextArrow: "<button type='button' class='slick-next pull-right slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
     dots: false,
 });
+
+var mess = document.querySelector(".messenger");
+var mess_toggle = document.querySelector(".toggle_mess");
+var toggle = -1;
+mess_toggle.addEventListener("click", () => {
+    if (toggle == 1){
+        mess.classList.add("hide");
+    }
+    else {
+        mess.classList.remove("hide");
+    }
+    toggle = -toggle;
+});
+
+var hidden = mess.querySelector(".mess-header .hidden");
+hidden.addEventListener("click", () => {
+    mess.classList.add("hide");
+    toggle = -toggle;
+});
